@@ -26,7 +26,8 @@ public class SyncStreamingCallback extends AbstractStreamingCallback {
 					"file does not exist",
 					"no file(s) as of that date",
 					"no such file(s)",
-					"Unexpected argument syntax - @");
+					"Unexpected argument syntax - @",
+					"can't overwrite existing file");
 		} catch (Exception e) {
 			setFail();
 			P4JavaException exception = new P4JavaException(e);
